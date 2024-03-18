@@ -1,0 +1,8 @@
+
+## Kabstand
+
+A simple, correct, efficient [interval tree](https://en.wikipedia.org/wiki/Interval_tree) implementation.
+
+Note: This is a Kotlin port of the [abstand](https://www.github.com/io7m/abstand) package
+      for users who are stuck on Android and cannot use modern Java. You
+      probably want that package instead of this one.

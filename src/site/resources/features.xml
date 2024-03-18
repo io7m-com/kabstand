@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <ul>
+    <li>Heavily commented, simple, and correct AVL interval tree.</li>
+    <li>Compatible with Kotlin in Java 11+ contexts.</li>
+    <li>ISC license</li>
+  </ul>
+</div>

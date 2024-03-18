@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <h3>User Documentation</h3>
+  <p>
+    See <a href="https://www.io7m.com/software/abstand">abstand</a>. This library
+    is mostly API-compatible.
+  </p>
+</div>
