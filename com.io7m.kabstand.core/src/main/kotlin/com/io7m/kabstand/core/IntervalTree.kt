@@ -107,9 +107,15 @@ class IntervalTree<S : Comparable<S>> private constructor(
       val leftST = this.left
       val rightST = this.right
 
-      check(this != leftST) { "A node must not be equal to its own left child." }
-      check(this != rightST) { "A node must not be equal to its own right child." }
-      check(this != this.parent) { "A node must not be equal to its own parent." }
+      check(this != leftST) {
+        "A node must not be equal to its own left child."
+      }
+      check(this != rightST) {
+        "A node must not be equal to its own right child."
+      }
+      check(this != this.parent) {
+        "A node must not be equal to its own parent."
+      }
 
       if (leftST != null) {
         val cmp = leftST.interval.compare(this.interval)
@@ -126,10 +132,16 @@ class IntervalTree<S : Comparable<S>> private constructor(
     }
 
     fun setNewParent(node : Node<S>?) {
-      check(node != this) { "A node's parent must not be equal to the node." }
+      check(node != this) {
+        "A node's parent must not be equal to the node."
+      }
       if (node != null) {
-        check(node != this.left) { "A node's parent must not be equal to its own left child." }
-        check(node != this.right) { "A node's parent must not be equal to its own right child." }
+        check(node != this.left) {
+          "A node's parent must not be equal to its own left child."
+        }
+        check(node != this.right) {
+          "A node's parent must not be equal to its own right child."
+        }
       }
       this.parent = node
       this.checkInvariants()
@@ -294,8 +306,9 @@ class IntervalTree<S : Comparable<S>> private constructor(
 
     current.checkInvariants()
 
-    check(current.balanceFactor().isBalanced)
-    { "Balance factor of node $current is ${current.balanceFactor()}" }
+    check(current.balanceFactor().isBalanced) {
+      "Balance factor of node $current is ${current.balanceFactor()}"
+    }
 
     this.validateAt(current.left)
     this.validateAt(current.right)
@@ -339,11 +352,13 @@ class IntervalTree<S : Comparable<S>> private constructor(
       }
 
       IntervalComparison.LESS_THAN -> {
-        current.takeOwnershipLeft(this.create(current, current.left, interval))
+        current.takeOwnershipLeft(
+          this.create(current, current.left, interval))
       }
 
       IntervalComparison.MORE_THAN -> {
-        current.takeOwnershipRight(this.create(current, current.right, interval))
+        current.takeOwnershipRight(
+          this.create(current, current.right, interval))
       }
     }
 
@@ -590,26 +605,26 @@ class IntervalTree<S : Comparable<S>> private constructor(
 
     val currentStream : Stream<IntervalType<S>> =
       if (interval.overlaps(current.interval)) {
-      Stream.of(current.interval)
-    } else {
-      Stream.empty()
-    }
+        Stream.of(current.interval)
+      } else {
+        Stream.empty()
+      }
 
     val lst = current.left
     val leftStream : Stream<IntervalType<S>> =
-      if (lst != null && lst.maximum.overlaps(interval)) {
+      if (lst != null && lst.maximum.upper() >= interval.lower()) {
         this.overlappingAt(lst, interval)
-    } else {
-      Stream.empty()
-    }
+      } else {
+        Stream.empty()
+      }
 
     val rst = current.right
     val rightStream : Stream<IntervalType<S>> =
-      if (rst != null && rst.maximum.overlaps(interval)) {
+      if (rst != null) {
         this.overlappingAt(rst, interval)
-    } else {
-      Stream.empty()
-    }
+      } else {
+        Stream.empty()
+      }
 
     return Stream.of(leftStream, currentStream, rightStream)
       .flatMap { x -> x }
