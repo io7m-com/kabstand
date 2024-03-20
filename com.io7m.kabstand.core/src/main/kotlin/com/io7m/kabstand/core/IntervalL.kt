@@ -17,8 +17,8 @@
 package com.io7m.kabstand.core
 
 data class IntervalL(
-  val lower: Long,
-  val upper: Long
+  val lower : Long,
+  val upper : Long
 ) : IntervalType<Long> {
 
   init {
@@ -26,7 +26,8 @@ data class IntervalL(
   }
 
   override fun overlaps(
-    other : IntervalType<Long>) : Boolean {
+    other : IntervalType<Long>
+  ) : Boolean {
     return (this.lower <= other.upper() && other.lower() <= this.upper)
   }
 

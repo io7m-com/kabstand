@@ -30,7 +30,8 @@ data class IntervalD(
   }
 
   override fun upperMaximum(
-    other : IntervalType<Double>) : IntervalType<Double> {
+    other : IntervalType<Double>
+  ) : IntervalType<Double> {
     return IntervalD(
       this.lower,
       Math.max(this.upper, other.upper())

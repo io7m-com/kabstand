@@ -17,8 +17,8 @@
 package com.io7m.kabstand.core
 
 data class IntervalI(
-  val lower: Int,
-  val upper: Int
+  val lower : Int,
+  val upper : Int
 ) : IntervalType<Int> {
 
   init {

@@ -9,7 +9,7 @@
   <parent>
     <artifactId>com.io7m.kabstand</artifactId>
     <groupId>com.io7m.kabstand</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-beta0001</version>
   </parent>
   <artifactId>com.io7m.kabstand.core</artifactId>
 
@@ -42,6 +42,25 @@
               <sourceDirs>
                 <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
               </sourceDirs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-kotlin-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>src/main/kotlin</source>
+              </sources>
             </configuration>
           </execution>
         </executions>
