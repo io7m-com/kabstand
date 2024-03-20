@@ -181,14 +181,24 @@ class IntervalTree<S : Comparable<S>> private constructor(
         when (current.left!!.balanceFactor()) {
           RIGHT_HEAVY,
           BALANCED_LEANING_RIGHT -> {
-            this.publish(IntervalTreeChangeType.Balanced("RL", current.interval))
+            this.publish(
+              IntervalTreeChangeType.Balanced(
+                "RL",
+                current.interval
+              )
+            )
             this.rotateRL(current)
           }
 
           LEFT_HEAVY,
           BALANCED,
           BALANCED_LEANING_LEFT  -> {
-            this.publish(IntervalTreeChangeType.Balanced("RR", current.interval))
+            this.publish(
+              IntervalTreeChangeType.Balanced(
+                "RR",
+                current.interval
+              )
+            )
             this.rotateRR(current)
           }
         }
@@ -198,14 +208,24 @@ class IntervalTree<S : Comparable<S>> private constructor(
         when (current.right!!.balanceFactor()) {
           LEFT_HEAVY,
           BALANCED_LEANING_LEFT  -> {
-            this.publish(IntervalTreeChangeType.Balanced("LR", current.interval))
+            this.publish(
+              IntervalTreeChangeType.Balanced(
+                "LR",
+                current.interval
+              )
+            )
             this.rotateLR(current)
           }
 
           RIGHT_HEAVY,
           BALANCED,
           BALANCED_LEANING_RIGHT -> {
-            this.publish(IntervalTreeChangeType.Balanced("LL", current.interval))
+            this.publish(
+              IntervalTreeChangeType.Balanced(
+                "LL",
+                current.interval
+              )
+            )
             this.rotateLL(current)
           }
         }
@@ -353,12 +373,14 @@ class IntervalTree<S : Comparable<S>> private constructor(
 
       IntervalComparison.LESS_THAN -> {
         current.takeOwnershipLeft(
-          this.create(current, current.left, interval))
+          this.create(current, current.left, interval)
+        )
       }
 
       IntervalComparison.MORE_THAN -> {
         current.takeOwnershipRight(
-          this.create(current, current.right, interval))
+          this.create(current, current.right, interval)
+        )
       }
     }
 

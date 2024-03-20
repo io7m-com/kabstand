@@ -19,8 +19,7 @@ package com.io7m.kabstand.core
 import java.math.BigInteger
 
 data class IntervalB(
-  val lower: BigInteger,
-  val upper: BigInteger
+  val lower : BigInteger, val upper : BigInteger
 ) : IntervalType<BigInteger> {
 
   init {
