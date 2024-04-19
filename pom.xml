@@ -117,7 +117,7 @@
       <dependency>
         <groupId>net.jqwik</groupId>
         <artifactId>jqwik-api</artifactId>
-        <version>1.8.2</version>
+        <version>1.8.4</version>
       </dependency>
 
       <dependency>
