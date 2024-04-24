@@ -38,6 +38,10 @@ data class IntervalD(
     )
   }
 
+  override fun size() : Double {
+    return 1.0 + (this.upper - this.lower)
+  }
+
   override fun upper() : Double {
     return this.upper
   }

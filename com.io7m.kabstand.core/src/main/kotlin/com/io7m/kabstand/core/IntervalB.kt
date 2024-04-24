@@ -19,7 +19,8 @@ package com.io7m.kabstand.core
 import java.math.BigInteger
 
 data class IntervalB(
-  val lower : BigInteger, val upper : BigInteger
+  val lower : BigInteger,
+  val upper : BigInteger
 ) : IntervalType<BigInteger> {
 
   init {
@@ -36,6 +37,10 @@ data class IntervalB(
     other : IntervalType<BigInteger>
   ) : IntervalType<BigInteger> {
     return IntervalB(lower, upper.max(other.upper()))
+  }
+
+  override fun size() : BigInteger {
+    return BigInteger.ONE + (this.upper - this.lower)
   }
 
   override fun upper() : BigInteger {
