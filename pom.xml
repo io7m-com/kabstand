@@ -8,12 +8,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>8.1.0</version>
+    <version>8.2.0</version>
   </parent>
 
   <groupId>com.io7m.kabstand</groupId>
   <artifactId>com.io7m.kabstand</artifactId>
-  <version>1.0.0-beta0001</version>
+  <version>1.0.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.kabstand</name>
@@ -28,7 +28,7 @@
 
   <properties>
     <!-- Configuration -->
-    <io7m.api.previousVersion>1.0.0-beta0001</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>11</io7m.java.targetJavaVersion>
     <checkstyle.skip>true</checkstyle.skip>
     <mdep.analyze.skip>true</mdep.analyze.skip>
@@ -45,9 +45,9 @@
   </licenses>
 
   <scm>
-    <url>https://www.github.com/io7m/kabstand</url>
-    <connection>scm:git:https://github.com/io7m/kabstand</connection>
-    <developerConnection>scm:git:https://github.com/io7m/kabstand</developerConnection>
+    <url>https://www.github.com/io7m-com/kabstand</url>
+    <connection>scm:git:https://www.github.com/io7m-com/kabstand</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/kabstand</developerConnection>
   </scm>
 
   <developers>
@@ -60,7 +60,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://www.github.com/io7m/kabstand/issues</url>
+    <url>https://www.github.com/io7m-com/kabstand/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -82,7 +82,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://www.github.com/io7m/kabstand/actions</url>
+    <url>https://www.github.com/io7m-com/kabstand/actions</url>
   </ciManagement>
 
   <prerequisites>
@@ -106,29 +106,29 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>2.0.12</version>
+        <version>2.0.13</version>
       </dependency>
 
       <dependency>
         <groupId>net.jqwik</groupId>
         <artifactId>jqwik-engine</artifactId>
-        <version>1.8.2</version>
+        <version>1.8.4</version>
       </dependency>
       <dependency>
         <groupId>net.jqwik</groupId>
         <artifactId>jqwik-api</artifactId>
-        <version>1.8.2</version>
+        <version>1.8.4</version>
       </dependency>
 
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.10.1</version>
+        <version>5.10.2</version>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <version>5.10.1</version>
+        <version>5.10.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

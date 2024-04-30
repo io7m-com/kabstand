@@ -36,6 +36,10 @@ data class IntervalI(
     )
   }
 
+  override fun size() : Int {
+    return 1 + (this.upper - this.lower)
+  }
+
   override fun upper() : Int {
     return this.upper
   }

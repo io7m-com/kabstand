@@ -9,14 +9,14 @@
   <parent>
     <artifactId>com.io7m.kabstand</artifactId>
     <groupId>com.io7m.kabstand</groupId>
-    <version>1.0.0-beta0001</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>com.io7m.kabstand.core</artifactId>
 
   <packaging>jar</packaging>
   <name>com.io7m.kabstand.core</name>
   <description>Kotlin port of the abstand package (Core)</description>
-  <url>https://www.github.com/io7m/kabstand</url>
+  <url>https://www.github.com/io7m-com/kabstand</url>
 
   <dependencies>
     <dependency>

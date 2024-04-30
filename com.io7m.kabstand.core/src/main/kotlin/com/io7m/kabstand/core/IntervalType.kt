@@ -33,6 +33,12 @@ interface IntervalType<S : Comparable<S>> : Comparable<IntervalType<S>> {
   fun overlaps(other : IntervalType<S>) : Boolean
 
   /**
+   * The interval size (1 + (upper - lower))
+   */
+
+  fun size() : S
+
+  /**
    * @return The inclusive upper bound
    */
 

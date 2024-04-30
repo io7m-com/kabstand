@@ -22,7 +22,7 @@ data class IntervalL(
 ) : IntervalType<Long> {
 
   init {
-    check(upper >= lower) { "Upper $upper must be >= lower $lower " }
+    check(this.upper >= this.lower) { "Upper ${this.upper} must be >= lower ${this.lower} " }
   }
 
   override fun overlaps(
@@ -36,6 +36,10 @@ data class IntervalL(
       this.lower,
       Math.max(this.upper, other.upper())
     )
+  }
+
+  override fun size() : Long {
+    return 1L + (this.upper - this.lower)
   }
 
   override fun upper() : Long {
