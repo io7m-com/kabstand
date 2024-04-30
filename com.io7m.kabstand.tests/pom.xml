@@ -16,7 +16,7 @@
   <packaging>jar</packaging>
   <name>com.io7m.kabstand.tests</name>
   <description>Kotlin port of the abstand package (Test suite)</description>
-  <url>https://www.github.com/io7m/kabstand</url>
+  <url>https://www.github.com/io7m-com/kabstand</url>
 
   <dependencies>
     <dependency>

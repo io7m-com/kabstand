@@ -45,9 +45,9 @@
   </licenses>
 
   <scm>
-    <url>https://www.github.com/io7m/kabstand</url>
-    <connection>scm:git:https://github.com/io7m/kabstand</connection>
-    <developerConnection>scm:git:https://github.com/io7m/kabstand</developerConnection>
+    <url>https://www.github.com/io7m-com/kabstand</url>
+    <connection>scm:git:https://www.github.com/io7m-com/kabstand</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/kabstand</developerConnection>
   </scm>
 
   <developers>
@@ -60,7 +60,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://www.github.com/io7m/kabstand/issues</url>
+    <url>https://www.github.com/io7m-com/kabstand/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -82,7 +82,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://www.github.com/io7m/kabstand/actions</url>
+    <url>https://www.github.com/io7m-com/kabstand/actions</url>
   </ciManagement>
 
   <prerequisites>
