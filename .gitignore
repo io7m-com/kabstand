@@ -2,3 +2,5 @@
 .idea
 pom.xml.versionsBackup
 target
+.jqwik-database
+dependency-reduced-pom.xml
