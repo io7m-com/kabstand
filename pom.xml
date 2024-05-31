@@ -13,7 +13,7 @@
 
   <groupId>com.io7m.kabstand</groupId>
   <artifactId>com.io7m.kabstand</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.kabstand</name>
@@ -34,7 +34,7 @@
     <mdep.analyze.skip>true</mdep.analyze.skip>
 
     <!-- Third party dependencies. -->
-    <kotlin.version>1.9.23</kotlin.version>
+    <kotlin.version>1.9.24</kotlin.version>
   </properties>
 
   <licenses>
@@ -112,12 +112,12 @@
       <dependency>
         <groupId>net.jqwik</groupId>
         <artifactId>jqwik-engine</artifactId>
-        <version>1.8.4</version>
+        <version>1.8.5</version>
       </dependency>
       <dependency>
         <groupId>net.jqwik</groupId>
         <artifactId>jqwik-api</artifactId>
-        <version>1.8.4</version>
+        <version>1.8.5</version>
       </dependency>
 
       <dependency>

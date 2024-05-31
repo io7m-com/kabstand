@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <c:changelog project="com.io7m.abstand" xmlns:c="urn:com.io7m.changelog:4.0">
   <c:releases>
-    <c:release date="2024-04-30T11:39:23+00:00" is-open="false" ticket-system="com.github.io7m.kabstand" version="1.0.0">
+    <c:release date="2024-04-30T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.kabstand" version="1.0.0">
       <c:changes>
         <c:change date="2024-04-30T00:00:00+00:00" summary="Initial public release."/>
+      </c:changes>
+    </c:release>
+    <c:release date="2024-05-31T17:05:45+00:00" is-open="false" ticket-system="com.github.io7m.kabstand" version="1.1.0">
+      <c:changes>
+        <c:change date="2024-05-07T00:00:00+00:00" summary="Update kotlin.version:1.9.23 → 1.9.24."/>
+        <c:change date="2024-05-24T00:00:00+00:00" summary="Update net.jqwik:jqwik-engine:1.8.4 → 1.8.5."/>
+        <c:change date="2024-05-24T00:00:00+00:00" summary="Update net.jqwik:jqwik-api:1.8.4 → 1.8.5."/>
+        <c:change date="2024-05-31T00:00:00+00:00" summary="Move to new organization."/>
       </c:changes>
     </c:release>
   </c:releases>
