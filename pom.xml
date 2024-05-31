@@ -13,7 +13,7 @@
 
   <groupId>com.io7m.kabstand</groupId>
   <artifactId>com.io7m.kabstand</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.kabstand</name>
@@ -28,7 +28,7 @@
 
   <properties>
     <!-- Configuration -->
-    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.1.0</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>11</io7m.java.targetJavaVersion>
     <checkstyle.skip>true</checkstyle.skip>
     <mdep.analyze.skip>true</mdep.analyze.skip>
