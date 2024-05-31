@@ -6,8 +6,10 @@
         <c:change date="2024-04-30T00:00:00+00:00" summary="Initial public release."/>
       </c:changes>
     </c:release>
-    <c:release date="2024-04-30T11:45:04+00:00" is-open="true" ticket-system="com.github.io7m.kabstand" version="1.1.0">
-      <c:changes/>
+    <c:release date="2024-05-31T17:02:45+00:00" is-open="true" ticket-system="com.github.io7m.kabstand" version="1.1.0">
+      <c:changes>
+        <c:change date="2024-05-31T17:02:45+00:00" summary="Move to new organization."/>
+      </c:changes>
     </c:release>
   </c:releases>
   <c:ticket-systems>
