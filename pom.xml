@@ -34,7 +34,7 @@
     <mdep.analyze.skip>true</mdep.analyze.skip>
 
     <!-- Third party dependencies. -->
-    <kotlin.version>1.9.24</kotlin.version>
+    <kotlin.version>1.9.25</kotlin.version>
   </properties>
 
   <licenses>
