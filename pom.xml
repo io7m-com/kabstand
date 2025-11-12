@@ -35,7 +35,7 @@
 
     <!-- Third party dependencies. -->
     <org.junit.version>5.14.0</org.junit.version>
-    <kotlin.version>2.2.10</kotlin.version>
+    <kotlin.version>2.2.21</kotlin.version>
   </properties>
 
   <licenses>
