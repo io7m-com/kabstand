@@ -34,7 +34,7 @@
     <mdep.analyze.skip>true</mdep.analyze.skip>
 
     <!-- Third party dependencies. -->
-    <org.junit.version>5.14.3</org.junit.version>
+    <org.junit.version>5.14.4</org.junit.version>
     <kotlin.version>2.3.20</kotlin.version>
   </properties>
 
